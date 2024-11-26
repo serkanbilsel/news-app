@@ -1,0 +1,79 @@
+/* General Container */
+.live-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: #121B25;
+  color: #333;
+}
+
+/* Header Section */
+.live-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.live-header h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff4500; /* Highlighted color */
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.live-header p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  position: relative;
+  width: 70%;
+  max-width: 900px;
+  height: 0;
+  padding-bottom: 35.25%; /* Aspect ratio for 16:9 video */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .live-header h1 {
+    font-size: 28px;
+  }
+
+  .live-header p {
+    font-size: 16px;
+  }
+
+  .video-wrapper {
+    padding-bottom: 75%; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .live-header h1 {
+    font-size: 22px;
+  }
+
+  .live-header p {
+    font-size: 14px;
+  }
+
+  .video-wrapper {
+    padding-bottom: 90%; /* Further adjustment for very small screens */
+  }
+}

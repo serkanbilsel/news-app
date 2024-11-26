@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Bnews</string>
+    <string name="title_activity_main">Bnews</string>
+    <string name="package_name">com.bnews.app</string>
+    <string name="custom_url_scheme">com.bnews.app</string>
+</resources>
